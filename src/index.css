@@ -13,6 +13,9 @@ body,* {
   --text-primary: #E6E6F1;
   --text-secondary: #E61C4D;
 }
+.text-secondary{
+  color: var(--text-secondary);
+}
 
 .background{
   background-color: var(--bg-primary);
@@ -24,3 +27,56 @@ body,* {
   padding: 2rem;
 }
 
+.hero{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.text-lg{
+  font-size: 2rem;
+  margin-bottom:1.5rem;
+}
+.text-md{
+  font-size: 1.5rem;
+  margin-bottom:1.25rem;
+}
+.btn{
+  outline: none;
+  background-color: transparent;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+
+.btn-primary{
+  border: 1px solid var(--text-primary);
+  color: var(--text-primary);
+}
+
+.btn-secondary{
+  border: 1px solid var(--text-secondary);
+  color: var(--text-secondary);
+}
+
+
+.btn-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 200px;
+  margin: 0.5rem 0;
+}
+.btn-section > .btn{
+  width: 100%;
+}

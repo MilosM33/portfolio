@@ -1,23 +1,37 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 export default function Navbar() {
+  let routes = [
+    {
+      path: "/",
+      name: "Home",
+    },
+    {
+      path: "/about",
+      name: "About me",
+    },
+    {
+      path: "/contact",
+      name: "Contact",
+    },
+    {
+      path: "/portfolio",
+      name: "Portfolio",
+    },
+    {
+      path: "/blog",
+      name: "Blog",
+    }
+  ];
+
   return (
     <nav>
       <ul>
-        <li>
-          <a href="/about">About me</a>
-        </li>
-        <li>
-          <a href="/">Contact</a>
-        </li>
-        <li>
-          <a href="/about">Home</a>
-        </li>
-        <li>
-          <a href="/about">Portfolio</a>
-        </li>
-        <li>
-          <a href="/about">Blog</a>
-        </li>
+        {routes.map((route) => (
+          <li>
+            <Link to={"/about"}>{route.name}</Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );

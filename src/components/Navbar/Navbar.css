@@ -17,7 +17,7 @@ nav ul a::before{
     content: '';
     display: block;
     width: 0;
-    height: 2px;
+    height: 4px;
     background-color: #fff;
     transition: all 0.3s ease-in-out;
     position: absolute;

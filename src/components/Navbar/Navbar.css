@@ -1,0 +1,28 @@
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+nav ul a::before{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    bottom: -5px;
+}
+nav ul a:hover::before{
+    width: 100%;
+}

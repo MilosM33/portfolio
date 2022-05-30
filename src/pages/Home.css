@@ -1,3 +1,10 @@
-.bg{
-    
+
+
+
+@media screen and (max-width: 600px){
+    .hero .text-lg{
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--text-primary);
+    }
 }

@@ -20,11 +20,68 @@ nav ul a::before{
     display: block;
     width: 0;
     height: 4px;
-    background-color: #fff;
+    background-color: var(--text-secondary);
     transition: all 0.3s ease-in-out;
     position: absolute;
     bottom: -5px;
 }
+nav ul a:hover{
+    color: var(--text-secondary);
+}
 nav ul a:hover::before{
     width: 100%;
+}
+
+
+
+.hamburger{
+    font-size: 4rem;
+    float: right;
+}
+@media screen and (min-width: 600px){
+    .hamburger{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px){
+    .navbar.active{
+        display:flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        
+        top: 0;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+    
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar::before{
+        content: '';
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        filter: blur(1.5rem);
+        width: 300vw;
+        height: 300vh;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0);
+    }
+    .navbar.active::before{
+        content: '';
+        transform: scale(1);
+    }
+    .navbar li a{
+        display: block;
+        margin: 1rem 0px;
+        font-size: 2rem;
+        
+    }
+
+    nav ul a::before{
+        content: '';
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

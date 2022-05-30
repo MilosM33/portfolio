@@ -1,0 +1,39 @@
+.about-title{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--text-secondary);
+    margin-bottom: 0.5em;
+}
+
+.about-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.img-temp{
+    background-color: gray;
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.about-content{
+    width: 50%;
+    display: flex;
+}
+.about-paragraph{
+    margin-top: 1rem;
+}
+.about-author{
+    margin: 5rem 3rem;
+    text-align: center;
+}
+.about-author small{
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-top: 2rem;
+    display: inline-block;
+}

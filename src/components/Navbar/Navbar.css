@@ -21,7 +21,7 @@ nav ul a::before{
     width: 0;
     height: 4px;
     background-color: var(--text-secondary);
-    /* transition: all 0.3s ease-in-out; */
+    transition: all 0.3s ease-in-out;
     position: absolute;
     bottom: -5px;
 }

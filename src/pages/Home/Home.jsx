@@ -1,12 +1,10 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
 import "./Home.css";
-import "../index.css";
+import "../../index.css";
+import Content from "../../components/Content/Content";
 export default function Home() {
   return (
-    <div className="background">
-      <Navbar></Navbar>
-
+    <Content>
       <section className="hero">
         <h1 className="text-lg">
           Hello, I'm <span className="text-secondary">Miloš Marejka</span>
@@ -19,6 +17,6 @@ export default function Home() {
           <button className="btn btn-primary">Contact me</button>
         </div>
       </section>
-    </div>
+    </Content>
   );
 }

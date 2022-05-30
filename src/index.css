@@ -13,7 +13,7 @@
 
 html,body{
   width: 100vw !important;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 /*
   Utility classes
